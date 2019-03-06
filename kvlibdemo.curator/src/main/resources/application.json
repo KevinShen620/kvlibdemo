@@ -1,0 +1,16 @@
+{
+	"appName": "flow",
+	"paths": 
+	{
+		"upload": "C:\\fileflowupload",
+		"file": "/"
+	},
+	"debug": true,
+	"defaultDicType": "pms",
+	"welcomePage":"/pages/rhome",
+	"anonymousUris": 
+	[
+		"/flow/profile/user_profile2.zul"
+	],
+	"reg.user.rolegroups":["reg.default","reg.default.quyu"]
+}

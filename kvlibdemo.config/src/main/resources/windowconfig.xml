@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<gui>
+		<windowManager config-class="kevsn.config.beans.DefaultWindowManager"
+			closable="false" resizable="true" defaultWidth="400" defaultHeight="250">
+			<styleDefinition config-class="kevsn.config.beans.WindowStyleDefinition"
+				backColor="#ffffff" foreColor="0080ff" iconName="myicon" />
+		</windowManager>
+	</gui>
+</config>

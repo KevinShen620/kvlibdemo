@@ -1,0 +1,780 @@
+2016-04-14 18:50:22,557 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 18:50:22,568 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 18:50:22,568 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 18:50:22,569 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 18:50:22,570 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 18:50:22,585 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 18:50:22,589 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 18:50:22,641 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 18:50:22,647 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f578080189, negotiated timeout = 10000
+2016-04-14 18:50:22,652 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@1da234e8 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 18:50:22,652 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 18:50:22,652 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 18:50:22,654 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 18:50:52,868 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - A collections change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections, has occurred - updating...
+2016-04-14 19:41:43,493 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 19:41:43,507 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 19:41:43,507 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 19:41:43,507 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 19:41:43,507 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 19:41:43,507 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 19:41:43,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 19:41:43,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 19:41:43,526 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 19:41:43,530 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 19:41:43,583 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 19:41:43,591 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f57808018e, negotiated timeout = 10000
+2016-04-14 19:41:43,594 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7376b240 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 19:41:43,595 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 19:41:43,595 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 19:41:43,596 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 19:41:43,833 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - A collections change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections, has occurred - updating...
+2016-04-14 20:55:46,593 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 20:55:46,607 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 20:55:46,608 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 20:55:46,609 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 20:55:46,609 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 20:55:46,610 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 20:55:46,628 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 20:55:46,633 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 20:55:46,693 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 20:55:46,727 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801af, negotiated timeout = 10000
+2016-04-14 20:55:46,733 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@1008ca66 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 20:55:46,734 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 20:55:46,734 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 20:55:46,737 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 20:55:47,111 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - A collections change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections, has occurred - updating...
+2016-04-14 20:55:49,004 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 20:55:49,004 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@5ea434c8
+2016-04-14 20:55:49,005 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 20:55:49,006 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 20:55:49,006 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 20:55:49,008 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801b0, negotiated timeout = 10000
+2016-04-14 20:55:49,009 [zkCallback-4-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@6a02ec5b name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 20:55:49,009 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 20:55:49,009 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 20:55:49,009 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 20:55:49,024 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 20:55:49,025 [zkCallback-4-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 20:57:10,682 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 20:57:10,696 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 20:57:10,696 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 20:57:10,696 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 20:57:10,697 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 20:57:10,698 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 20:57:10,698 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 20:57:10,698 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 20:57:10,699 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@3ffc5af1
+2016-04-14 20:57:10,714 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 20:57:10,717 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 20:57:10,778 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 20:57:10,786 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801b1, negotiated timeout = 10000
+2016-04-14 20:57:10,790 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@4dae0fb2 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 20:57:10,790 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 20:57:10,790 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 20:57:10,793 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 20:57:11,054 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:51:00,879 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 22:51:00,890 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 22:51:00,891 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 22:51:00,891 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 22:51:00,891 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 22:51:00,891 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@29774679
+2016-04-14 22:51:00,906 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:51:00,909 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:51:00,957 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 22:51:00,965 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801ca, negotiated timeout = 10000
+2016-04-14 22:51:00,968 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@1c76b413 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:51:00,969 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:51:00,969 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:51:00,971 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 22:54:31,957 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:54:31,967 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 22:54:31,968 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 22:54:31,969 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@29774679
+2016-04-14 22:54:31,991 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:54:31,994 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:54:32,044 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 22:54:32,052 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801cb, negotiated timeout = 10000
+2016-04-14 22:54:32,056 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@e13434b name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:54:32,056 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:54:32,056 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:54:32,059 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 22:54:32,778 [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x153f0f5780801cb closed
+2016-04-14 22:54:32,779 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down
+2016-04-14 22:58:07,551 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:58:07,561 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 22:58:07,562 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 22:58:07,563 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@29774679
+2016-04-14 22:58:07,577 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:58:07,581 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:58:07,629 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 22:58:07,637 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801cc, negotiated timeout = 10000
+2016-04-14 22:58:07,640 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7d9e1720 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:58:07,640 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:58:07,640 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:58:07,642 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 22:58:48,219 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:58:48,231 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 22:58:48,231 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 22:58:48,231 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 22:58:48,231 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 22:58:48,231 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 22:58:48,232 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 22:58:48,233 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@3ffc5af1
+2016-04-14 22:58:48,247 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:58:48,251 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:58:48,299 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 22:58:48,309 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801cd, negotiated timeout = 10000
+2016-04-14 22:58:48,312 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@64ac6477 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:58:48,312 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:58:48,312 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:58:48,314 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 22:58:48,519 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:58:48,519 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:58:48,733 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:58:48,733 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@29f69090
+2016-04-14 22:58:48,734 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:58:48,735 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:58:48,735 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 22:58:48,737 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801ce, negotiated timeout = 10000
+2016-04-14 22:58:48,738 [zkCallback-4-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@1c23ff84 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:58:48,738 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:58:48,738 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:58:48,738 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 22:59:35,218 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:59:35,256 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 22:59:35,256 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 22:59:35,257 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 22:59:35,257 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 22:59:35,258 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 22:59:35,258 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 22:59:35,259 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 22:59:35,259 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 22:59:35,259 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 22:59:35,260 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 22:59:35,260 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 22:59:35,261 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 22:59:35,261 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 22:59:35,261 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 22:59:35,262 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 22:59:35,264 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@30ee2816
+2016-04-14 22:59:35,303 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:59:35,311 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:59:35,375 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 22:59:35,387 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801cf, negotiated timeout = 10000
+2016-04-14 22:59:35,393 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7969fea6 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:59:35,393 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:59:35,394 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:59:35,397 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 22:59:36,480 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:59:36,480 [zkCallback-4-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:59:36,480 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:59:36,481 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-14 22:59:44,371 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 22:59:44,372 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@68746f22
+2016-04-14 22:59:44,373 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 22:59:44,374 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 22:59:44,375 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 22:59:44,377 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801d0, negotiated timeout = 10000
+2016-04-14 22:59:44,378 [zkCallback-4-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@32b61eee name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 22:59:44,378 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 22:59:44,378 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 22:59:44,378 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:30:43,934 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:30:43,948 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:30:43,948 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:30:43,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:30:43,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 23:30:43,968 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:30:43,972 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:30:44,027 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:30:44,035 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801d1, negotiated timeout = 10000
+2016-04-14 23:30:44,039 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@54eb98a5 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:30:44,039 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:30:44,040 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:30:44,041 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:33:02,227 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:33:02,238 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:33:02,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:33:02,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 23:33:02,255 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:33:02,259 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:33:02,310 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:33:02,319 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801d2, negotiated timeout = 10000
+2016-04-14 23:33:02,323 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@73eae85e name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:33:02,323 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:33:02,323 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:33:02,325 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:33:22,227 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:33:22,239 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:33:22,240 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:33:22,240 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:33:22,240 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:33:22,240 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:33:22,240 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:33:22,240 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:33:22,241 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 23:33:22,256 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:33:22,259 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:33:22,309 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:33:22,316 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801d3, negotiated timeout = 10000
+2016-04-14 23:33:22,320 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@238560be name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:33:22,320 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:33:22,321 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:33:22,322 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:33:44,636 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:33:44,647 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:33:44,648 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:33:44,649 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-14 23:33:44,664 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:33:44,667 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:33:44,716 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:33:44,724 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801d4, negotiated timeout = 10000
+2016-04-14 23:33:44,728 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@5d18dab8 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:33:44,728 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:33:44,728 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:33:44,730 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:34:21,864 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:34:21,874 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:34:21,875 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:34:21,876 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:34:21,876 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:34:21,876 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@29774679
+2016-04-14 23:34:21,891 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:34:21,894 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:34:21,943 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:34:21,951 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801d5, negotiated timeout = 10000
+2016-04-14 23:34:21,954 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7d9e1720 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:34:21,954 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:34:21,954 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:34:21,956 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:35:06,731 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:35:06,741 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:35:06,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:35:06,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:35:06,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:35:06,758 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:35:06,761 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:35:06,813 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:35:06,821 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801d6, negotiated timeout = 10000
+2016-04-14 23:35:06,824 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7c3a2577 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:35:06,824 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:35:06,825 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:35:06,827 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:35:49,636 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:35:49,677 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:35:49,678 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:35:49,678 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:35:49,679 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:35:49,679 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:35:49,679 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:35:49,680 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:35:49,680 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:35:49,681 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:35:49,681 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:35:49,681 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:35:49,682 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:35:49,682 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:35:49,683 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:35:49,683 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:35:49,685 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@1ab3a8c8
+2016-04-14 23:35:49,724 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:35:49,730 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:35:49,794 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:35:49,809 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801d7, negotiated timeout = 10000
+2016-04-14 23:35:49,816 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@58116460 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:35:49,816 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:35:49,816 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:35:49,820 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:36:28,500 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:36:28,511 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:36:28,511 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:36:28,511 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:36:28,511 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:36:28,511 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:36:28,511 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:36:28,512 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:36:28,513 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:36:28,527 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:36:28,531 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:36:28,582 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:36:28,590 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801d8, negotiated timeout = 10000
+2016-04-14 23:36:28,592 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7a90c132 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:36:28,592 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:36:28,593 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:36:28,595 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:38:03,297 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:38:03,307 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:38:03,307 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:38:03,307 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:38:03,307 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:38:03,307 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:38:03,307 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:38:03,308 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:38:03,309 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:38:03,324 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:38:03,328 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:38:03,380 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:38:03,388 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801d9, negotiated timeout = 10000
+2016-04-14 23:38:03,392 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7a90c132 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:38:03,393 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:38:03,393 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:38:03,395 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:38:22,019 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:38:22,029 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:38:22,029 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:38:22,029 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:38:22,029 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:38:22,030 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:38:22,031 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:38:22,045 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:38:22,049 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:38:22,101 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:38:22,110 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801da, negotiated timeout = 10000
+2016-04-14 23:38:22,113 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@24ab767d name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:38:22,113 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:38:22,113 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:38:22,115 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:38:39,497 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:38:39,508 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:38:39,509 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:38:39,510 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:38:39,527 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:38:39,531 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:38:39,581 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:38:39,589 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801db, negotiated timeout = 10000
+2016-04-14 23:38:39,592 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7c3a2577 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:38:39,592 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:38:39,592 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:38:39,594 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:40:07,752 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:40:07,762 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:40:07,763 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:40:07,764 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:40:07,779 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:40:07,782 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:40:07,833 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:40:07,839 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801dc, negotiated timeout = 10000
+2016-04-14 23:40:07,842 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@788c39ae name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:40:07,843 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:40:07,843 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:40:07,845 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:44:47,731 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:44:47,742 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:44:47,743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:44:47,744 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:44:47,759 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:44:47,762 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:44:47,811 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-14 23:44:47,817 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801dd, negotiated timeout = 10000
+2016-04-14 23:44:47,820 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@24ab767d name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:44:47,820 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:44:47,821 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:44:47,823 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-14 23:45:13,021 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-14 23:45:13,031 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-14 23:45:13,031 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-14 23:45:13,031 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-14 23:45:13,031 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-14 23:45:13,031 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-14 23:45:13,032 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-14 23:45:13,033 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-14 23:45:13,048 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-14 23:45:13,052 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-14 23:45:13,105 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-14 23:45:13,111 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801de, negotiated timeout = 10000
+2016-04-14 23:45:13,114 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@7c3a2577 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-14 23:45:13,114 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-14 23:45:13,114 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-14 23:45:13,116 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:18:51,467 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:18:51,824 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-15 00:18:51,825 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-15 00:18:51,826 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-15 00:18:51,826 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-15 00:18:51,826 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-15 00:18:51,826 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-15 00:18:51,826 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-15 00:18:51,827 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-15 00:18:51,847 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:18:51,851 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:18:51,905 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-15 00:18:51,912 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801df, negotiated timeout = 10000
+2016-04-15 00:18:51,915 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@137deeab name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:18:51,915 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:18:51,915 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:18:51,917 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:18:52,332 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - A collections change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections, has occurred - updating...
+2016-04-15 00:20:55,893 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-15 00:20:56,195 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-15 00:20:56,196 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-15 00:20:56,196 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-15 00:20:56,196 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-15 00:20:56,196 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-15 00:20:56,196 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-15 00:20:56,196 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-15 00:20:56,197 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@26653222
+2016-04-15 00:20:56,220 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:20:56,225 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:20:56,278 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-15 00:20:56,285 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801e0, negotiated timeout = 10000
+2016-04-15 00:20:56,289 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@6f6dc43b name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:20:56,289 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:20:56,289 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:20:56,291 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:20:56,557 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - A collections change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections, has occurred - updating...
+2016-04-15 00:20:58,092 [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x153f0f5780801e0 closed
+2016-04-15 00:20:58,092 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down
+2016-04-15 00:20:58,094 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:20:58,094 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@5ea434c8
+2016-04-15 00:20:58,095 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:20:58,096 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:20:58,096 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-15 00:20:58,097 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801e1, negotiated timeout = 10000
+2016-04-15 00:20:58,098 [zkCallback-4-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@17423c03 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:20:58,098 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:20:58,098 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:20:58,098 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:20:58,109 [zkCallback-4-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - A collections change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections, has occurred - updating...
+2016-04-15 00:20:59,681 [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x153f0f5780801e1 closed
+2016-04-15 00:20:59,681 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down
+2016-04-15 00:25:47,291 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:25:47,527 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-15 00:25:47,527 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-15 00:25:47,527 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-15 00:25:47,528 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-15 00:25:47,529 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@3ffc5af1
+2016-04-15 00:25:47,551 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:25:47,555 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:25:47,606 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-15 00:25:47,613 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801e2, negotiated timeout = 10000
+2016-04-15 00:25:47,617 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@cdcfcb2 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:25:47,617 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:25:47,617 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:25:47,620 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:25:47,867 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-15 00:25:47,994 [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x153f0f5780801e2 closed
+2016-04-15 00:25:47,994 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down
+2016-04-15 00:26:16,009 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:26:16,020 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-15 00:26:16,020 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-15 00:26:16,020 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-15 00:26:16,020 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-15 00:26:16,021 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-15 00:26:16,022 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@3ffc5af1
+2016-04-15 00:26:16,037 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:26:16,041 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:26:16,091 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-04-15 00:26:16,098 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x153f0f5780801e3, negotiated timeout = 10000
+2016-04-15 00:26:16,101 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@15147345 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:26:16,102 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:26:16,102 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:26:16,104 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:26:16,322 [zkCallback-2-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-15 00:26:16,446 [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x153f0f5780801e3 closed
+2016-04-15 00:26:16,446 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down
+2016-04-15 00:26:16,447 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:26:16,448 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@67e2d983
+2016-04-15 00:26:16,448 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:26:16,449 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:26:16,449 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-15 00:26:16,450 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801e4, negotiated timeout = 10000
+2016-04-15 00:26:16,451 [zkCallback-4-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@28c1167a name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:26:16,451 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:26:16,451 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:26:16,451 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
+2016-04-15 00:26:16,462 [zkCallback-4-thread-1] INFO  o.a.solr.common.cloud.ZkStateReader - Updating aliases... 
+2016-04-15 00:26:16,568 [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x153f0f5780801e4 closed
+2016-04-15 00:26:16,568 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down
+2016-04-15 00:27:53,684 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkCredentialsProvider
+2016-04-15 00:27:53,949 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=192.168.1.11
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_74
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr/target/classes:/Users/kevin/.m2/repository/org/apache/solr/solr-solrj/5.4.1/solr-solrj-5.4.1.jar:/Users/kevin/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar:/Users/kevin/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/Users/kevin/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/Users/kevin/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar:/Users/kevin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar:/Users/kevin/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/Users/kevin/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/m_/_l1z1jkd5pn8xxb91p46qh0h0000gn/T/
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+2016-04-15 00:27:53,950 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.11.4
+2016-04-15 00:27:53,951 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=kevin
+2016-04-15 00:27:53,951 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/kevin
+2016-04-15 00:27:53,951 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/kevin/git/kvlibdemo/kvlibdemo/kvlibdemo.solr
+2016-04-15 00:27:53,952 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181/solrCloud sessionTimeout=10000 watcher=org.apache.solr.common.cloud.SolrZkClient$3@7d9d1a19
+2016-04-15 00:27:53,969 [main] INFO  o.a.s.common.cloud.ConnectionManager - Waiting for client to connect to ZooKeeper
+2016-04-15 00:27:53,973 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-04-15 00:27:54,025 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-04-15 00:27:54,033 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x153f0f5780801e5, negotiated timeout = 10000
+2016-04-15 00:27:54,036 [zkCallback-2-thread-1] INFO  o.a.s.common.cloud.ConnectionManager - Watcher org.apache.solr.common.cloud.ConnectionManager@36a98b57 name:ZooKeeperConnection Watcher:localhost:2181/solrCloud got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2016-04-15 00:27:54,036 [main] INFO  o.a.s.common.cloud.ConnectionManager - Client is connected to ZooKeeper
+2016-04-15 00:27:54,036 [main] INFO  o.a.solr.common.cloud.SolrZkClient - Using default ZkACLProvider
+2016-04-15 00:27:54,039 [main] INFO  o.a.solr.common.cloud.ZkStateReader - Updating cluster state from ZooKeeper... 
